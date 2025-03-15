@@ -1,0 +1,244 @@
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1d55ff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.nav-links a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: #1d55ff;
+}
+
+.mobile-menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* responsive*/
+@media(max-width:768px){
+    .nav-links{
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: 2rem 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+    .nav-links.active{
+        right: 0;
+
+    }
+
+    .mobile-menu-btn{
+        display: block;
+    }
+}
+body {
+    background-color: #171137; /* Change to any color */
+}
+/* above is all nav bar stuff */
+
+h1 {
+    text-align: center;
+    color: #ffc61c;
+    margin: 2rem 0;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.section-description {
+    font-family: courier, sans-serif;
+    text-align: center; /* Centers the text inside */
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto 2rem; /* Centers the whole element horizontally */
+    line-height: 2;
+    font-size: 1.5rem;
+
+    position: relative;
+    display: block; /* Ensures it takes up its own space */
+    background: #ffffff; /* Bubble color 177E89 */
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+.banner {
+    background: url('images/Project\ Name-VEED.gif') center/cover no-repeat;
+
+    text-align: center;
+    color: white;
+
+    padding: 100px 20px;
+    height: 100px;
+  }
+  
+  h2{
+    text-align: center;
+    width: 100%;
+    height: auto;
+    color: #1d55ff;
+  }
+
+  img {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    padding: 20px 20px;
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+/* Hover effects */
+img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transform: scale(1.1); /* Slightly enlarges the image */
+}
+
+/* Parent container with flexbox for centering */
+.row-one-container {
+    display: flex;
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center;     /* Centers child elements vertically */
+    gap: 30px;
+    margin-right: 30px;
+}
+
+/* Tablets: 2 columns */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Mobile menu button (hamburger) */
+  .mobile-menu-btn {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  /* Mobile menu links container */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    padding: 2rem;
+    transition: right 0.3s ease;
+  }
+  
+  /* Show mobile menu when checkbox is checked */
+  .menu-toggle:checked + .mobile-menu-btn + .nav-links {
+    right: 0;
+  }
+  
+  /* Make menu button visible only on mobile */
+  @media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+  }
+  
+  /* When a menu item is clicked, hide the menu */
+  .nav-links a {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+  }
+  
+  /* Close the menu when clicking a menu item */
+  .nav-links a:active {
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease;
+  }
