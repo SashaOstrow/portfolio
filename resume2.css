@@ -1,0 +1,244 @@
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1d55ff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.nav-links a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: #1d55ff;
+}
+
+.mobile-menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+}
+
+/* responsive*/
+@media(max-width:768px){
+    .nav-links{
+        position: fixed;
+        top: 70px;
+        right: -100%;
+        flex-direction: column;
+        background: white;
+        width: 70%;
+        height: 100vh;
+        padding: 2rem;
+        box-shadow: 2rem 0 5px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        gap: 1rem;
+    }
+    .nav-links.active{
+        right: 0;
+
+    }
+
+    .mobile-menu-btn{
+        display: block;
+    }
+}
+
+/* above is all nav bar stuff */
+
+
+/* Modern Dark Theme Resume Styles */
+:root {
+    --primary-color: #ffc61c;
+    --accent-color: #1d55ff;
+    --text-light: #ffffff;
+    --text-gray: #b4b4b4;
+    --background-dark: #171137;
+    --card-background: #171137;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #171137;
+ /* new code */
+
+ .resume-container {
+    background-color: white; /* White background for the bubble */
+    border-radius: 20px; /* Rounded corners to create a bubble effect */
+    padding: 30px; 
+    max-width: 600px;
+    margin: 50px auto;
+    border: 5px solid white; 
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow Effect */
+}
+
+/* Hover Text Effect */
+.text-hover {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.text-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background-color: #646cff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.text-hover:hover::after {
+    transform: scaleX(1);
+}
+
+.text-hover:hover {
+    color: #646cff; /* Changes text color */
+    transform: scale(1.1); /* Slightly enlarges text */
+}
+
+    body::before {
+        content: '';
+        position: fixed;               /* Fixed position covers entire viewport */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:  #171137;
+        background-size: cover;
+        z-index: -1;                  /* Places overlay behind content */
+    }
+
+/* Header Section */
+header {
+    background-color: var(--accent-color);
+    padding: 2rem;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--accent-color);
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+h4{
+    font-family: courier, sans-serif;
+    font-weight: bold;
+}
+
+.skill-text {
+    position: relative;
+    z-index: 1;
+    color: var(--text-light);
+}
+
+.section-description {
+    font-family: courier, sans-serif;
+}
+
+/* email icon source: https://www.flaticon.com/packs/seo-and-marketing-9
+linkedin icon source: https://www.flaticon.com/packs/social-media-234
+phone icon source: https://www.flaticon.com/packs/font-awesome
+*/
+
+
+
+.contact-link {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+    margin: 0 2px;
+}
+
+.contact-link:hover{
+    color: #ffc61c; /* Changes text color */
+    transform: scale(1.1); /* Slightly enlarges text */
+}
+
+.contact-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+
+}
