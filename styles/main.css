@@ -94,6 +94,21 @@ body {
     background-color: #171137;
 }
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
 h1 {
     text-align: center;
     color: #ffc61c;
