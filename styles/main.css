@@ -168,9 +168,10 @@ img:hover {
     transform: scale(1.1); /* Slightly enlarges the image */
 }
 a {
+    text-align: center;
     display: inline-block;
     color: #ffc61c;/* Gold color */
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none; /* Removes underline */
     margin: 20px 0;
