@@ -109,7 +109,26 @@ h1 {
     color: #ffc61c;
     margin: 2rem 0;
     font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0;  /* Start invisible */
+    transform: translateY(-20px); /* Start slightly above */
+    animation: fadeBounce 1.5s ease-out forwards;
+}
+
+/* Define the animation */
+@keyframes fadeBounce {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 /* <p> stype*/
 .section-description {
