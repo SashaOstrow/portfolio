@@ -167,7 +167,7 @@ img:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
     transform: scale(1.1); /* Slightly enlarges the image */
 }
-a {
+link-direct {
     text-align: center;
     display: inline-block;
     color: #ffc61c;/* Gold color */
@@ -177,7 +177,7 @@ a {
     margin: 20px 0;
 }
 
-a:hover {
+link-direct:hover {
     text-decoration: underline; /* Underline on hover */
     color: #ff9900; /* Slightly different shade on hover */
 }
