@@ -1,87 +1,4 @@
 
-nav {
-    margin-top: 10px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.navbar{
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-
-.logo{
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #1d55ff;
-    text-decoration: none;
-    letter-spacing: 1px;
-}
-
-.nav-links{
-    display: flex;
-    gap: 2rem;
-
-}
-
-.nav-links a{
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover{
-    color: #1d55ff;
-}
-
-.mobile-menu-btn{
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-}
-
-/* responsive*/
-@media(max-width:768px){
-    .nav-links{
-        position: fixed;
-        top: 70px;
-        right: -100%;
-        flex-direction: column;
-        background: white;
-        width: 70%;
-        height: 100vh;
-        padding: 2rem;
-        box-shadow: 2rem 0 5px rgba(0, 0, 0, 0.1);
-        transition: right 0.3s ease;
-        gap: 1rem;
-    }
-    .nav-links.active{
-        right: 0;
-
-    }
-
-    .mobile-menu-btn{
-        display: block;
-    }
-}
-
-/* above is all nav bar stuff */
 
 
 /* Modern Dark Theme Resume Styles */
@@ -100,6 +17,7 @@ body {
     padding: 0 20px;
     background-color: #171137;
  /* new code */
+}
 
  .resume-container {
     background-color: white; /* White background for the bubble */
@@ -107,7 +25,7 @@ body {
     padding: 30px; 
     max-width: 600px;
     margin: 50px auto;
-    border: 5px solid white; 
+    border: 5px solid rgb(255, 255, 255); 
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow Effect */
 }
 
@@ -132,9 +50,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.text-hover:hover::after {
-    transform: scaleX(1);
-}
 
 .text-hover:hover {
     color: #646cff; /* Changes text color */
@@ -217,28 +132,17 @@ phone icon source: https://www.flaticon.com/packs/font-awesome
     margin-right: 4px;
     width: 16px;
     height: 16px;
-}
+    }
 
 @media (max-width: 768px) {
     .mobile-menu-btn {
       display: block;
     }
-  }
-
-  .mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-  }
+    }
 
 footer {
     text-align: center;
     padding: 20px;
     background: #ffffff;
     color: rgb(0, 0, 0);
-  }
-
-}
+    }
