@@ -7,20 +7,26 @@
         <link rel="stylesheet" href="myWebsite.css">
     </head>
 
-    <nav class="navbar">
-        <a href="index.html" class="logo">SASHA T. OSTROW</a>
-        <div class="nav-links active" id="navLinks">
-    
-            <a href="index.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="work.html">My Work</a>
-            <a href="myWesite.html"> My Demo Website</a>
-    
-        </div>
-        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-    </nav>
+
 
     <body>
+
+        <nav class="navbar">
+            <a href="index.html" class="logo">SASHA T. OSTROW</a>
+    
+            <!-- Mobile Menu Toggle (Checkbox + Label) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="mobile-menu-btn">☰</label>
+    
+            <!-- Navigation Links (Now Below Label) -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="work.html">My Work</a>
+                <a href="myWesite.html">My Demo Website</a>
+            </div>
+        </nav> 
+
         <header class="banner">
             <h1 class="main-title">●・○・● Art Techniques ●・○・●</h1>
             <h4>The visuals of art can make great emotional impacts on people. Art is not only a way to express creativity for artists but can also be interactive for viewers to analyze art and be able to find deeper meanings within artwork. There is so much that goes into pieces of art than an average person may not think about. Artists have to think about the colors, flow of eye movement, white space, rules of third and many other aspects. Art is not just having the skill to draw, but it's also about knowing how to keep the eye engaged. Some of the most popular art pieces we know today became popular because of the artists skill to engage the eye in their work. To have a successful art piece there needs to be a feeling of movement and an illusion of fullness yet space to keep the eye entertained. Learning these kind of skills can be hard to master but the important part is not about being a profession in these kind of skills, what more important is knowing these techniques exists to be more aware of the artistic process and being able to understand art work in a deeper level, or as an artist, it's good practice these skills to enhance personal skills.</h4>
@@ -34,7 +40,7 @@
                 Color theory is the way colors work together. It can be easy to understand but complicated to work with. There's many different techniques that can be used when mixing colors. The color palette an artist may choose can determine the feeling an art piece will portray. Three common patteles that are easy to introduce to beginners are sticking to only cool or warm  colors, keeping an art piece black and white, or using contrasting colors. An example of this is: purple and yellow are on opposite sides of the color wheel, meaning they work well together to make a compelling piece of work.
             </p>
             <div class="image-container">
-                <img src="images\colour-theory.jpg" alt="Color Theory">
+                <img src="images/colour-theory.jpg" alt="Color Theory">
                 <div class="grid-item-overlay">public domain </div>
             </div>
         </div>
@@ -47,7 +53,7 @@
                         The rules of third is the idea that you should never put the main subject of an art piece in the middle of the frame, rather is it more compelling to put the subject off to the side. It gives the art a sense of balance and gives the viewer more space to analyze more areas of an art piece rather than just slapping the subject in the middle. By putting the subject in the middle it makes the frame feel broken up and doesn’t have a cohesive flow between everything in the art piece.
                     </p>
                     <div class="image-container">
-                        <img src="images\rules-of-thirds.jpg" alt="Rule of Thirds">
+                        <img src="images/rules-of-thirds.jpg" alt="Rule of Thirds">
                         <div class="grid-item-overlay">public domain </div>
                     </div>
                 </div>
@@ -63,7 +69,7 @@
                 </p>
 
                 <div class="image-container">
-                    <img src="images\rules-of-odds.jpg" alt="Rule of Odds">
+                    <img src="images/rules-of-odds.jpg" alt="Rule of Odds">
                     <div class="grid-item-overlay"> Stock Image</div>
                 </div>
         </div>
@@ -77,7 +83,7 @@
 
             </p>
             <div class="image-container">
-                <img src="images\white-space.jpg" alt="White Space">
+                <img src="images/white-space.jpg" alt="White Space">
                 <div class="grid-item-overlay">public domain </div>
             </div>
         </div>
@@ -89,7 +95,7 @@
 
             </p>
             <div class="image-container">
-                <img src="images\movement.jpg" alt="Movement Princible">
+                <img src="images/movement.jpg" alt="Movement Princible">
                 <div class="grid-item-overlay">Image by: Julia Watkins</div>
             </div>
         </div>
@@ -103,7 +109,7 @@
             <h2>Van Gogh and The Stary Night</h2>
             <p class="section-description">Referencing the rules and techniques that were mentioned above, there's a lot of these topics used within this painting. To start, there's a lot of flow throughout the whole painting using the strokes from each individual line of color. One of the first things you will notice is the dark long object on the left side of the painting, which uses the rule of thirds. Then the eye will be intrigued by the yellow circles. If you look closely, you can notice that there is an empty space in the sky that has no objects in it, using the technique of white space. Each of the circles in the sky are clumped together in odd numbers and lead the eye to the largest circle, which is the moon. The last part of the painting that you will probably look at last is the city below the sky. Overall, the painting has very cool colored tones and gives off a vibe of calmness. </p>
                 <div class="image-container">
-                    <img src="images\the-stary-night.jpg" alt="The stary Night">
+                    <img src="images/the-stary-night.jpg" alt="The stary Night">
                 </div>
             </div>
 
@@ -111,7 +117,7 @@
                 <h2>Claude Monet and The Water Lily Pond</h2>
                 <p class="section-description">The main subject of the art piece is the bridge which is slightly above what would be considered the center of the painting, giving more space to put details underneath the bridge. A lot of the colors in this drawing are blues and greens, but when looking at more details you can notice small hints of red which is the contracting color to green which works smoothly in the artwork. The movement in the painting is most likely going to be noticing the bridge first, then the water underneath and lastly looking at the trees behind the bridge. The texture used throughout the whole art piece brings more focus on keeping the eye interested in looking at the small details throughout the whole frame of the piece. </p>
                     <div class="image-container">
-                        <img src="images\water-lily-pond.jpg" alt="The stary Night">
+                        <img src="images/water-lily-pond.jpg" alt="The stary Night">
                     </div>
                 </div>
 
@@ -161,11 +167,9 @@
     </div>
 
 
-
+    <footer>
+        © 2025 Sasha T. Ostrow Portfolio
+    </footer>
 </body>
 </html>
 
-<footer>
-    © 2025 Sasha T. Ostrow Profoilo 
-
-</footer>
